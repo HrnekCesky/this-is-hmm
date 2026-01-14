@@ -22,6 +22,8 @@ namespace helppls
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string Tabulka = textTabuka.Text;
+            
             string connString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={path};";
             int nummm = (int)numericUpDown1.Value;
             try
@@ -30,7 +32,7 @@ namespace helppls
                 {
                     conn.Open();
 
-                    string sql = "SELECT * FROM Tabulka1 WHERE ID = ?";
+                    string sql = $"SELECT * FROM {Tabulka} WHERE ID = ?";
                     using (OleDbCommand cmd = new OleDbCommand(sql, conn))
                     {
                         cmd.Parameters.AddWithValue("?", nummm);

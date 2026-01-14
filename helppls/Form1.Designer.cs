@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textTabuka = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,12 +129,26 @@
             this.textBox1.Text = "kde?";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // textTabuka
+            // 
+            this.textTabuka.Location = new System.Drawing.Point(575, 286);
+            this.textTabuka.Name = "textTabuka";
+            this.textTabuka.Size = new System.Drawing.Size(100, 20);
+            this.textTabuka.TabIndex = 7;
+            this.textTabuka.Text = "Tabulka1";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuText;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textTabuka);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.numericUpDown1);
@@ -156,6 +173,8 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textTabuka;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
